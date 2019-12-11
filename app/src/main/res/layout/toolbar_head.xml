@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?attr/background2">
+
+
+    <!--自定义状态栏高度-->
+    <View
+        android:id="@+id/ve_hight"
+        android:layout_width="match_parent"
+        android:layout_height="22dp" />
+
+
+    <!--自定义toolbar-->
+    <RelativeLayout
+        android:id="@+id/tool_re"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/ve_hight"
+        tools:ignore="MissingConstraints">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/tb_back"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="18dp"-->
+        <!--android:src="@mipmap/back"-->
+        <!--/>-->
+
+
+        <ImageView
+            android:id="@+id/slide"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="12dp"
+            android:padding="5dp"
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/left_mine_menu" />
+
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="12dp"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tb_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="标题"
+            android:textColor="#ffffff"
+            android:textSize="19dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/QR_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:src="@mipmap/select_head" />
+
+        <ImageView
+            android:id="@+id/select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/QR_code"
+            android:src="@mipmap/select_head" />
+    </RelativeLayout>
+
+</LinearLayout>

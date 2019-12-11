@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="base_color">#1296db</color>
+    <color name="background">#f2f2f2</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="dark_grey">#a9a9a9</color>
+    <color name="grey">#808080</color>
+    <color name="light_grey">#d3d3d3</color>
+    <color name="translate">#00000000</color>
+    <color name="black1">#6e6e6e</color>
+    <color name="button">#018CF8</color>
+    <color name="eim_login_hint">#EDEDED</color>
+    <color name="dialog_button">#0C4987</color>
+    <color name="button_disable">#68B6F3</color>
+    <color name="dialog_button1">#9C9C9C</color>
+
+
+    <color name="colorPrimary1">#018CF8</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="text_color">#1B1B1B</color>
+    <color name="text_graycolor">#657180</color>
+    <color name="hide_text_color">#9EA7B4</color>
+    <color name="btn_backgroud">#018CF8</color>
+    <color name="btn_text_color">#f6f6f6</color>
+    <color name="login_fg_pwd">#195AFF</color>
+    <color name="line">#eaeaea</color>
+    <color name="btn_exit">#DD502C</color>
+
+     
+    <color name="nightColorPrimary">#3b3b3b</color>
+    <color name="nightColorPrimaryDark">#18222F</color>
+    <color name="nightColorAccent">#a72b55</color>
+    <color name="nighttext_color">#e5e5e7</color>
+    <color name="nighttext_graycolor">#bcbcbc</color>
+    <color name="nighthide_text_color">#86A0C2</color>
+    <color name="nightbtn_backgroud">#2e73a7</color>
+    <color name="nightbtn_text_color">#c8c8c8</color>
+    <color name="nightlogin_fg_pwd">#2a77c3</color>
+    <color name="nightline">#474747</color>
+    <color name="nightbtn_exit">#983218</color>
+    <color name="mainBackground1">#777777</color>
+    <color name="night_text_color">#86A0C2</color>
+    <color name="night_drawable_color">#516A89</color>
+    <color name="day_drawable_color">#464c5b</color>
+    <color name="bg_search">#DCDEE2</color>
+    <color name="bg_search_1">#0B1016</color>
+    <color name="bg_search_2">#EEEEEE</color>
+    <color name="bg_search_3">#808695</color>
+    <color name="gray_text_color">#86A0C2</color>
+
+
+
+    <color name="transparent">#00000000</color>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="mainBackground" format="color|reference" />
+    <attr name="mainBackground1" format="color|reference" />
+    <attr name="bg_main_bottom" format="reference"/>
+    <attr name="background1" format="color|reference"/>
+    <attr name="background2" format="color|reference"/>
+    <attr name="background3" format="color|reference"/>
+    <!--<attr name="line" format="color|reference" />-->
+    <!--<attr name="btn_exit" format="color|reference" />-->
+    <attr name="text_color" format="color|reference" />
+    <attr name="text_color1" format="color|reference" />
+    <attr name="mine_icon1" format="reference" />
+    <attr name="mine_icon2" format="reference" />
+    <attr name="mine_icon3" format="reference" />
+    <attr name="mine_icon4" format="reference" />
+    <attr name="mine_icon5" format="reference" />
+    <attr name="mine_icon6" format="reference" />
+    <attr name="mine_icon7" format="reference" />
+    <attr name="line" format="color|reference" />
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+    </declare-styleable>
+</resources>

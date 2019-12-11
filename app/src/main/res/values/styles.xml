@@ -1,0 +1,158 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- 避免控件会顶到状态栏上 -->
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="mainBackground">@color/line</item>
+        <item name="mainBackground1">@color/white</item>
+        <item name="text_color">@color/text_color</item>
+        <item name="text_color1">@color/text_color</item>
+        <item name="mine_icon1">@mipmap/mine_icon_1</item>
+        <item name="mine_icon2">@mipmap/mine_icon_2</item>
+        <item name="mine_icon3">@mipmap/mine_icon_3</item>
+        <item name="mine_icon4">@mipmap/mine_icon_4</item>
+        <item name="mine_icon5">@mipmap/mine_icon_5</item>
+        <item name="mine_icon6">@mipmap/mine_icon_6</item>
+        <item name="mine_icon7">@mipmap/scan</item>
+        <item name="bg_main_bottom">@drawable/bg_main_bottom1</item>
+        <item name="line">@color/line</item>
+
+        <!--<item name="main_qr_code">@mipmap/erweima</item>-->
+        <!--<item name="main_icon1">@drawable/right_slide</item>-->
+
+        <!--<item name="search_icon1">@mipmap/day_back</item>-->
+        <!--<item name="search_bg1">@color/bg_search</item>-->
+        <!--<item name="search_bg2">@color/white</item>-->
+        <!--<item name="search_bg3">@color/bg_search_2</item>-->
+        <!--<item name="search_bg4">@color/bg_search_3</item>-->
+
+        <!--<item name="consult_icon1">@drawable/xiala</item>-->
+
+        <item name="background1">@mipmap/mine_top_background</item>
+        <item name="background2">@mipmap/home_head_bar</item>
+        <item name="background3">@color/white</item>
+        <!--<item name="background4">#F6F6F6</item>-->
+        <!--<item name="background5">#ffffff</item>-->
+    </style>
+
+    <!-- 夜间模式-->
+    <style name="NightAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+          <!-- Customize your theme here. -->
+        <!-- 避免控件会顶到状态栏上 -->
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+        <item name="colorPrimary">@color/nightColorPrimary</item>
+        <item name="colorPrimaryDark">@color/nightColorPrimaryDark</item>
+        <item name="colorAccent">@color/nightColorAccent</item>
+        <item name="mainBackground">#141E2B</item>
+        <item name="mainBackground1">#151E2C</item>
+        <item name="text_color">@color/night_text_color</item>
+        <item name="text_color1">@color/gray_text_color</item>
+        <!--<item name="text_graycolor">@color/nighttext_graycolor</item>-->
+        <!--<item name="hide_text_color">@color/nighthide_text_color</item>-->
+        <!--<item name="gray_text_color">@color/gray_text_color</item>-->
+        <!--<item name="btn_backgroud">@color/nightbtn_backgroud</item>-->
+        <!--<item name="btn_text_color">@color/nightbtn_text_color</item>-->
+        <!--<item name="login_fg_pwd">@color/nightlogin_fg_pwd</item>-->
+        <!--<item name="line">#18222F</item>-->
+        <!--<item name="btn_exit">@color/nightbtn_exit</item>-->
+        <item name="bg_main_bottom">@drawable/bg_main_bottom2</item>
+         
+        <item name="mine_icon1">@mipmap/mine_icon_1</item>
+        <item name="mine_icon2">@mipmap/mine_icon_2</item>
+        <item name="mine_icon3">@mipmap/mine_icon_3</item>
+        <item name="mine_icon4">@mipmap/mine_icon_4</item>
+        <item name="mine_icon5">@mipmap/mine_icon_5</item>
+        <item name="mine_icon6">@mipmap/mine_icon_6</item>
+        <item name="mine_icon7">@mipmap/scan</item>
+        <item name="line">#18222F</item>
+        <!--<item name="main_qr_code">@mipmap/mine_icon_6</item>-->
+        <!--<item name="main_icon1">@mipmap/mine_icon_6</item>-->
+
+        <!--<item name="search_icon1">@mipmap/day_back</item>-->
+        <!--<item name="search_bg1">@color/nightColorPrimaryDark</item>-->
+        <!--<item name="search_bg2">@color/bg_search_1</item>-->
+        <!--<item name="search_bg3">@color/night_drawable_color</item>-->
+        <!--<item name="search_bg4">@color/night_drawable_color</item>-->
+
+        <!--<item name="consult_icon1">@drawable/right_slide</item>-->
+        <item name="background1">#18222F</item>
+        <item name="background2">#18222F</item>
+        <item name="background3">#18222F</item>
+        <!--<item name="background4">#18222F</item>-->
+        <!--<item name="background5">#29384A</item>-->
+    </style>
+
+
+    <!-- 弹出加载框样式 -->
+    <style name="ProgressHUD" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="LoginEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#cdd0e7</item>
+        <item name="colorControlActivated">#018CF8</item>
+
+    </style>
+
+    <!-- Toolbar 长按弹出Popup主题 -->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="myNavigationDrawerStyle">
+        <item name="android:textSize">13sp</item>
+        <!--<item name="android:actionMenuTextColor">?attr/text_color</item>-->
+
+    </style>
+
+    <style name="AppTheme.NoBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <style name="dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+
+    <!-- 自定义控件风格-->
+    <style name="Custom" />
+    <style name="Custom.TabRadioButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+</resources>

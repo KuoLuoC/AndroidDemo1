@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/background3"
+
+    >
+        <RelativeLayout
+            android:id="@+id/dtaw_head"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            >
+                <com.wzq.light_or_night.utils.CircleImageView
+                    android:id="@+id/mine_head"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/default_head"
+                    android:layout_marginLeft="25dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignTop="@+id/mine_head"
+                    android:layout_toRightOf="@+id/mine_head">
+
+                        <TextView
+                            android:id="@+id/mine_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="19dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="?attr/text_color"
+                            android:layout_marginLeft="21dp"
+                            android:text="个人资料页面"
+                            />
+                        <TextView
+                            android:id="@+id/orgname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/mine_name"
+                            android:text="邮箱：1521976977@qq.com "
+                            android:visibility="visible"
+                            android:padding="2dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/colorPrimary1"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="21dp"
+                            android:textSize="10dp"
+                            />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:src="@mipmap/point_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="?attr/line"
+            android:layout_marginTop="149dp"
+            />
+
+</RelativeLayout>

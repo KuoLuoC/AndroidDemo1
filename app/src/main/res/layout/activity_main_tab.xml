@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/mainBackground1"
+    android:orientation="vertical">
+
+    <com.wzq.light_or_night.widget.NoScrollViewPager
+        android:id="@+id/vp_Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-12dp"
+        android:layout_weight="1"
+        android:background="?attr/mainBackground1"/>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/bg_main_bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5">
+
+        <RadioButton
+            android:id="@+id/rb_todo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@color/translate"
+            android:button="@null"
+            android:drawableTop="@drawable/db_todo_bg"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center"
+            android:text="xxx"
+            android:checked="true"
+            android:textColor="@drawable/db_main_text_color"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rb_model"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@color/translate"
+            android:button="@null"
+            android:drawableTop="@drawable/db_model_bg"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center"
+            android:text="xxx"
+            android:textColor="@drawable/db_main_text_color"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rb_electrification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_1"
+            android:layout_weight="1"
+            android:background="@color/translate"
+            android:button="@null"
+            android:drawableTop="@drawable/db_electrification_bg"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center"
+            android:text="xxxxx"
+            android:textColor="@drawable/db_main_text_color"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rb_consulting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@color/translate"
+            android:button="@null"
+            android:drawableTop="@drawable/db_consulting_bg"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center"
+            android:text="xxx"
+            android:textColor="@drawable/db_main_text_color"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@color/translate"
+            android:button="@null"
+            android:drawableTop="@drawable/db_mine_bg"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center"
+            android:text="xxx"
+            android:textColor="@drawable/db_main_text_color"
+            android:textSize="10sp" />
+    </RadioGroup>
+
+
+</LinearLayout>

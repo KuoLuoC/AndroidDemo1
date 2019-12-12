@@ -14,6 +14,10 @@ import com.wzq.light_or_night.R;
 import com.wzq.light_or_night.skinTheme.ChangeModeController;
 import com.wzq.light_or_night.utils.NewStatusBarUtil;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import java.util.ArrayList;
 
 
@@ -57,10 +61,10 @@ public abstract class BaseActivity extends AppCompatActivity {
         //黄油刀绑定
 //        unbinder = ButterKnife.bind(this);
         //注册Evenbus
-//        if (useEventBus()) {
-//            Log.e("123", "111111111111111");
-//            EventBus.getDefault().register(this);
-//        }
+        if (useEventBus()) {
+            Log.e("123", "111111111111111");
+            EventBus.getDefault().register(this);
+        }
 
         initData();
         initView();
@@ -87,6 +91,7 @@ public abstract class BaseActivity extends AppCompatActivity {
      */
     protected abstract void initListener();
 
+    //使用EvenBus广播通知
     protected boolean useEventBus() {
         return false;
     }
@@ -96,11 +101,11 @@ public abstract class BaseActivity extends AppCompatActivity {
      * eventbus回调方法
      *
      */
-//    @Subscribe(threadMode = ThreadMode.MAIN)
-//    public void onEventMainThread(Intent intent) {
-//        if (TextUtils.equals(intent.getStringExtra("tig"), "0"))
-//        finish();
-//    }
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onEventMainThread(Intent intent) {
+        if (TextUtils.equals(intent.getStringExtra("tig"), "0"))
+        finish();
+    }
 
     @Override
     protected void onDestroy() {
@@ -111,7 +116,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 //            unbinder.unbind();
 //        }
 //        unDispose();
-//        EventBus.getDefault().unregister(this);
+        EventBus.getDefault().unregister(this);
     }
 
 }

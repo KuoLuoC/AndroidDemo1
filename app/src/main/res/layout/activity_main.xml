@@ -48,7 +48,7 @@
                     android:layout_marginLeft="14dp"
                     android:layout_toEndOf="@+id/mine_icon_1"
                     android:layout_toRightOf="@+id/mine_icon_1"
-                    android:text="我的账户"
+                    android:text="xxxx"
                     android:textColor="?attr/text_color"
                     android:textSize="15dp" />
 
@@ -81,7 +81,7 @@
                     android:layout_marginLeft="14dp"
                     android:layout_toEndOf="@+id/mine_icon_2"
                     android:layout_toRightOf="@+id/mine_icon_2"
-                    android:text="账户安全"
+                    android:text="xxxx"
                     android:textColor="?attr/text_color"
                     android:textSize="15dp" />
 
@@ -122,7 +122,7 @@
                     android:layout_marginLeft="14dp"
                     android:layout_toEndOf="@+id/mine_icon_3"
                     android:layout_toRightOf="@+id/mine_icon_3"
-                    android:text="扫一扫"
+                    android:text="xxxx"
                     android:textColor="?attr/text_color"
                     android:textSize="15dp" />
 
@@ -193,7 +193,7 @@
                     android:layout_marginLeft="14dp"
                     android:layout_toEndOf="@+id/mine_icon_5"
                     android:layout_toRightOf="@+id/mine_icon_5"
-                    android:text="清除缓存"
+                    android:text="xxxx"
                     android:textColor="?attr/text_color"
                     android:textSize="15dp" />
 
@@ -237,7 +237,7 @@
                     android:layout_marginLeft="14dp"
                     android:layout_toEndOf="@+id/mine_icon_8"
                     android:layout_toRightOf="@+id/mine_icon_8"
-                    android:text="关于"
+                    android:text="xxxx"
                     android:textColor="?attr/text_color"
                     android:textSize="15dp" />
 

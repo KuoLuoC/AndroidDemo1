@@ -1,6 +1,7 @@
 package com.wzq.light_or_night.ui;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.view.GravityCompat;
@@ -17,6 +18,7 @@ import com.wzq.light_or_night.fragment.Fragment3;
 import com.wzq.light_or_night.fragment.Fragment4;
 import com.wzq.light_or_night.fragment.Fragment5;
 import com.wzq.light_or_night.skinTheme.ChangeModeController;
+import com.wzq.light_or_night.skinTheme.ChangeModeHelper;
 import com.wzq.light_or_night.widget.NoScrollViewPager;
 import com.wzq.light_or_night.R;
 import com.wzq.light_or_night.base.BaseActivity;
@@ -43,7 +45,8 @@ public class MainActivity extends BaseActivity {
     private Fragment3 fragment3;
     private Fragment4 fragment4;
     private Fragment5 fragment5;
-
+    private int theme;
+    private boolean isNight;
 
 
     @Override
@@ -53,7 +56,6 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
-//        ChangeModeController.getInstance().init(this,R.attr.class).setTheme(this, R.style.AppTheme, R.style.NightAppTheme);
         super.onCreate(savedInstanceState);
     }
 
@@ -67,7 +69,16 @@ public class MainActivity extends BaseActivity {
         rbMine = (RadioButton) findViewById(R.id.rb_mine);
         mineLight = (CheckBox) findViewById(R.id.mine_light);
         drawerLayout1 = (DrawerLayout) findViewById(R.id.id_drawer_layout);
-
+       //保存夜间模式状态
+        if(isNight){
+            mineLight.setChecked(true);
+        }else {
+            mineLight.setChecked(false);
+        }
+        //保存抽屉效果
+        if(theme==1){
+            openDrawer();
+        }
         //初始化fragment模块
         initFragments();
         MyPageFragmentAdapter pageFragmentAdapter = new MyPageFragmentAdapter(getSupportFragmentManager(), fragments);
@@ -164,6 +175,8 @@ public class MainActivity extends BaseActivity {
         fragments = new ArrayList<>();
         Intent intent = getIntent();
         index = intent.getIntExtra("index", -1);
+        theme = intent.getIntExtra("theme", 0);
+        isNight =ChangeModeHelper.getStatus(MainActivity.this);
     }
 
     @Override
@@ -175,15 +188,22 @@ public class MainActivity extends BaseActivity {
                 switch (buttonView.getId()) {
                     case R.id.mine_light:
                         if (isChecked) {
-                            ChangeModeController.changeDay(MainActivity.this, R.style.AppTheme);
-//                            attrTypedValue = ChangeModeController.getAttrTypedValue(this, R.attr.zztextColor);
+                            ChangeModeController.changeNight(MainActivity.this, R.style.NightAppTheme);
+                            ChangeModeHelper.setStatus(MainActivity.this,true);
                         } else {
-                         ChangeModeController.changeNight(MainActivity.this, R.style.NightAppTheme);
+                            ChangeModeController.changeDay(MainActivity.this, R.style.AppTheme);
+                            ChangeModeHelper.setStatus(MainActivity.this,false);
                         }
                         break;
                 }
             }
         });
 
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(0,0);
     }
 }

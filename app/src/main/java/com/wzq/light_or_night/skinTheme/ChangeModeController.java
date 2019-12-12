@@ -5,6 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -19,6 +20,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.wzq.light_or_night.R;
+import com.wzq.light_or_night.ui.MainActivity;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -158,10 +160,18 @@ public class ChangeModeController {
         if(mBackGroundDrawableViews == null || mTextColorViews == null || mBackGroundViews == null){
             throw new RuntimeException("请先调用init()初始化方法!");
         }
+
         ChangeModeHelper.setChangeMode(ctx, ChangeModeHelper.MODE_NIGHT);
-        ctx.setTheme(style);
         showAnimation(ctx);
-        refreshUI(ctx);
+        ctx.setTheme(style);
+//        refreshUI(ctx);
+        Intent intent = new Intent(ctx, MainActivity.class);
+//        Intent intent = context.getIntent();
+//        FLAG_ACTIVITY_NO_ANIMATION
+        intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION );//跳转无闪烁、
+        intent.putExtra("theme",1);
+        ctx.startActivity(intent);
+        ctx.finish();
     }
 
     /**
@@ -174,9 +184,15 @@ public class ChangeModeController {
             throw new RuntimeException("请先调用init()初始化方法!");
         }
         ChangeModeHelper.setChangeMode(ctx, ChangeModeHelper.MODE_DAY);
-        ctx.setTheme(style);
         showAnimation(ctx);
-        refreshUI(ctx);
+        ctx.setTheme(style);
+//        refreshUI(ctx);
+        Intent intent = new Intent(ctx, MainActivity.class);
+//        Intent intent = context.getIntent();
+        intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION );
+        intent.putExtra("theme",1);
+        ctx.startActivity(intent);
+        ctx.finish();
     }
 
     /**

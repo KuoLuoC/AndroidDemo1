@@ -22,15 +22,6 @@
         android:layout_below="@+id/ve_hight"
         tools:ignore="MissingConstraints">
 
-        <!--<ImageView-->
-        <!--android:id="@+id/tb_back"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_centerVertical="true"-->
-        <!--android:layout_marginLeft="18dp"-->
-        <!--android:src="@mipmap/back"-->
-        <!--/>-->
-
 
         <ImageView
             android:id="@+id/slide"

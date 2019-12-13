@@ -28,38 +28,6 @@
 
             <include layout="@layout/draw_heard_layout" />
 
-            <RelativeLayout
-                android:id="@+id/mine_count"
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:layout_marginLeft="17dp">
-
-                <ImageView
-                    android:id="@+id/mine_icon_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:src="?attr/mine_icon1" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="14dp"
-                    android:layout_toEndOf="@+id/mine_icon_1"
-                    android:layout_toRightOf="@+id/mine_icon_1"
-                    android:text="xxxx"
-                    android:textColor="?attr/text_color"
-                    android:textSize="15dp" />
-
-                <ImageView
-                    android:layout_width="13dp"
-                    android:layout_height="13dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="16dp"
-                    android:src="@mipmap/point_right" />
-            </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/mine_safe"
@@ -81,7 +49,7 @@
                     android:layout_marginLeft="14dp"
                     android:layout_toEndOf="@+id/mine_icon_2"
                     android:layout_toRightOf="@+id/mine_icon_2"
-                    android:text="xxxx"
+                    android:text="修改密码"
                     android:textColor="?attr/text_color"
                     android:textSize="15dp" />
 
@@ -94,46 +62,6 @@
                     android:src="@mipmap/point_right" />
             </RelativeLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:layout_marginTop="3dp"
-                android:background="?attr/line"
-                />
-
-            <RelativeLayout
-                android:id="@+id/mine_scan"
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="3dp">
-
-                <ImageView
-                    android:id="@+id/mine_icon_3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:src="?attr/mine_icon6" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="14dp"
-                    android:layout_toEndOf="@+id/mine_icon_3"
-                    android:layout_toRightOf="@+id/mine_icon_3"
-                    android:text="xxxx"
-                    android:textColor="?attr/text_color"
-                    android:textSize="15dp" />
-
-                <ImageView
-                    android:layout_width="13dp"
-                    android:layout_height="13dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="16dp"
-                    android:src="@mipmap/point_right" />
-            </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/mine_night"
@@ -157,7 +85,7 @@
                     android:layout_marginLeft="14dp"
                     android:layout_toEndOf="@+id/mine_icon_7"
                     android:layout_toRightOf="@+id/mine_icon_7"
-                    android:text="夜览"
+                    android:text="夜间模式"
                     android:textColor="?attr/text_color"
                     android:textSize="15dp" />
 
@@ -171,49 +99,6 @@
                     android:background="@drawable/checkbox_line"
                     android:button="@null"
                     android:checked="false" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/mine_clear"
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:layout_marginLeft="15dp">
-
-                <ImageView
-                    android:id="@+id/mine_icon_5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:src="?attr/mine_icon4" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="14dp"
-                    android:layout_toEndOf="@+id/mine_icon_5"
-                    android:layout_toRightOf="@+id/mine_icon_5"
-                    android:text="xxxx"
-                    android:textColor="?attr/text_color"
-                    android:textSize="15dp" />
-
-                <TextView
-                    android:id="@+id/tv_catch"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="5dp"
-                    android:layout_toLeftOf="@+id/ig_into"
-                    android:text="0k" />
-
-                <ImageView
-                    android:id="@+id/ig_into"
-                    android:layout_width="13dp"
-                    android:layout_height="13dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="16dp"
-                    android:src="@mipmap/point_right" />
             </RelativeLayout>
 
 
@@ -237,7 +122,7 @@
                     android:layout_marginLeft="14dp"
                     android:layout_toEndOf="@+id/mine_icon_8"
                     android:layout_toRightOf="@+id/mine_icon_8"
-                    android:text="xxxx"
+                    android:text="关于APP"
                     android:textColor="?attr/text_color"
                     android:textSize="15dp" />
 

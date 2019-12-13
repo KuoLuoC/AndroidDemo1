@@ -32,7 +32,7 @@ public class ChangeModeHelper {
     }
 
     public static boolean getStatus(Context context){
-        SharedPreferences share=context.getSharedPreferences("themeapp", Activity.MODE_WORLD_READABLE);
+        SharedPreferences share=context.getSharedPreferences("themeapp", context.MODE_PRIVATE);
         Boolean i=share.getBoolean("isNight",false);
         return i;
     }

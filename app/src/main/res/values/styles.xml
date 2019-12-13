@@ -33,8 +33,8 @@
 
         <!--<item name="consult_icon1">@drawable/xiala</item>-->
 
-        <item name="background1">@mipmap/mine_top_background</item>
-        <item name="background2">@mipmap/home_head_bar</item>
+        <item name="background1">@color/colorPrimary1</item>
+        <item name="background2">@color/colorPrimary1</item>
         <item name="background3">@color/white</item>
         <!--<item name="background4">#F6F6F6</item>-->
         <!--<item name="background5">#ffffff</item>-->
@@ -101,7 +101,7 @@
 
     <style name="LoginEditText" parent="Theme.AppCompat.Light">
         <item name="colorControlNormal">#cdd0e7</item>
-        <item name="colorControlActivated">#018CF8</item>
+        <item name="colorControlActivated">#00BCD4</item>
 
     </style>
 

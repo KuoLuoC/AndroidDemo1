@@ -33,7 +33,6 @@ public abstract class BaseFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(attachLayoutRes(), null);
 //        ChangeModeController.getInstance().init(getActivity(),R.attr.class).setTheme(getActivity(), R.style.AppTheme, R.style.NightAppTheme);
-
 //        unbinder = ButterKnife.bind(this, view);
 //        mCompositeDisposable = new CompositeDisposable();
         //动态设置状态栏高度

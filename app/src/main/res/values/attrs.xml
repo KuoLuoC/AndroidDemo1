@@ -6,8 +6,6 @@
     <attr name="background1" format="color|reference"/>
     <attr name="background2" format="color|reference"/>
     <attr name="background3" format="color|reference"/>
-    <!--<attr name="line" format="color|reference" />-->
-    <!--<attr name="btn_exit" format="color|reference" />-->
     <attr name="text_color" format="color|reference" />
     <attr name="text_color1" format="color|reference" />
     <attr name="mine_icon1" format="reference" />
@@ -18,6 +16,8 @@
     <attr name="mine_icon6" format="reference" />
     <attr name="mine_icon7" format="reference" />
     <attr name="line" format="color|reference" />
+
+    <!--设置bar的样式-->
     <declare-styleable name="CircleImageView">
         <attr name="border_width" format="dimension"/>
         <attr name="border_color" format="color"/>

@@ -33,13 +33,13 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
-        ChangeModeController.getInstance().init(this,R.attr.class).setTheme(this, R.style.AppTheme, R.style.NightAppTheme);
-        super.onCreate(savedInstanceState);
-
         // 设置主题色，，，一定要在setView之前
         //第一步 当前要立即变色的页面
+        ChangeModeController.getInstance().init(this,R.attr.class).setTheme(this, R.style.AppTheme, R.style.NightAppTheme);
         //其他页面
         //ChangeModeController.setTheme(this, R.style.DayTheme, R.style.NightTheme);
+        super.onCreate(savedInstanceState);
+
 //        StatusBarUtil.fullScreen(BaseActivity.this);
         this.savedInstanceState = savedInstanceState;
         setContentView(attachLayoutRes());
